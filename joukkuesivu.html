@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joukkue</title>
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="kuvat/logo.png" alt="Logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#joukkue" class="active">Joukkue</a></li>
+                    <li><a href="#uutiset">Uutiset</a></li>
+                    <li><a href="#ottelut">Ottelut</a></li>
+                    <li><a href="#tilastot">Tilastot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="joukkue-info">
+            <h1>Joukkue</h1>
+            <p>Tervetuloa joukkueen sivulle! Täältä löydät tietoa joukkueen pelaajista, valmennuksesta ja saavutuksista.</p>
+        </section>
+
+        <section class="joukkuekuva">
+            <h2>Joukkueen Yhteiskuva</h2>
+            <div class="joukkuekuva-container">
+                <img src="kuvat/Joukkue.jpg" alt="Joukkueen yhteiskuva">
+            </div>
+        </section>
+
+        <section class="pelaajat">
+            <h2>Pelaajat</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nimi</th>
+                        <th>Pelipaikka</th>
+                        <th>Ikä</th>
+                        <th>Numero</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pelaaja 1</td>
+                        <td>Hyökkääjä</td>
+                        <td>25</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Pelaaja 2</td>
+                        <td>Puolustaja</td>
+                        <td>27</td>
+                        <td>4</td>
+                    </tr>
+                    <!-- Lisää pelaajia tarpeen mukaan -->
+                </tbody>
+            </table>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Joukkueen Sivusto</p>
+        </div>
+    </footer>
+</body>
+
+</html>

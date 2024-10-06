@@ -1,0 +1,228 @@
+
+body {
+  background-color: #f0f9f0;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "SUSE";
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sarjataulukon tyyli */
+.sarjataulukko {
+  flex: 1;
+  margin-right: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0f5104;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.team-name {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* Uutisten tyyli */
+.uutiset {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.uutiset h2 {
+  margin-top: 0;
+}
+
+.uutinen {
+  margin-bottom: 20px;
+}
+
+.uutinen h3 {
+  margin: 0;
+}
+
+.uutinen p {
+  margin: 5px 0;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Header tyylit */
+header {
+  background-color: #000000;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.header-text h1 {
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* Navigaatio */
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #0f5104
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: #0dff00;
+}
+
+/* Hakulomake */
+.search-form {
+  display: flex;
+}
+
+.search-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #0f5104;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #0f5104;
+}
+
+/* Media kyselyt */
+@media only screen and (max-width: 420px) {
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  .header-text h1 {
+      font-size: 2em;
+  }
+  .header-text p {
+      font-size: 1em;
+  }
+  .header-image {
+      max-width: 150px;
+  }
+}
+
+main h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main p,
+main ul {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #0f5104;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  
+}
+/* Footer-kuvakkeiden koko */
+.social-media img {
+  width: 30px;  /* Kuvan leveys */
+  height: 30px; /* Kuvan korkeus */
+  margin: 0 10px; /* Kuvien välit */
+  object-fit: cover; /* Pitää kuvan mittasuhteet sopivina */
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
